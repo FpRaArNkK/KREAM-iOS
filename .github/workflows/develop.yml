@@ -14,17 +14,6 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v4
-        
-      # 디렉토리 확인
-      - name: Check current directory
-        run: pwd
-
-      - name: List files in current directory
-        run: ls -la
-
-      # KREAM-iOS/KREAM 경로 확인 후 navigate
-      - name: Navigate to the correct directory
-        run: cd KREAM-iOS/KREAM
 
       - name: Set Default Scheme
         run: |
