@@ -14,9 +14,8 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v4
-        
       - name: Navigate to the correct directory
-        run: cd /Users/Git/Projects/KREAM-iOS/KREAM
+        run: cd KREAM-iOS/KREAM
       - name: Set Default Scheme
         run: |
           scheme_list=$(xcodebuild -list -json | tr -d "\n")
